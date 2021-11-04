@@ -15,8 +15,67 @@
         height: 100vh;
         background-image: linear-gradient(to bottom right, #1ccde8 42%, #DDDDDD 50%, #e8b81c 58%);
     }
+
+    header {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headFlex {
+        height: 10vh;
+        width: 90%;
+        background: whitesmoke;
+        box-shadow: 0px 0px 18px 0.1px #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-weight: bold;
+        height: 100%;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1ccde8;
+    }
+
+    .navList {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navList a {
+        height: 100%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e8b81c;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
 </style>
 <body>
+    <header>
+        <div class="headFlex">
+            <div class="logo">
+                KLM
+            </div>
+            <div class="navList">
+                <a class="currentPage" href="/instructions">Instructions</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/system-info">System</a>
+            </div>
+        </div>
+    </header>
     {% include page %}
 </body>
 </html>
